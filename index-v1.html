@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style2.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,63 +14,92 @@
   </head>
   <body>
     <header class="header">
-      <div class="container header__inner">
-        <div class="logo">
-          <img src="./images/logo.png" alt="logo" />
-        </div>
+      <img src="/images/logo.png" alt="logo" class="max-w-[152px]" />
 
+      <div class="right-block">
         <nav class="nav">
-          <a href="#" class="active">Home</a>
+          <a href="#">Home</a>
           <a href="#">Properties</a>
           <a href="#">Agents</a>
           <a href="#">Blog</a>
         </nav>
 
-        <a href="#" class="btn-login">Log In</a>
+        <button class="btn-login">Log in</button>
       </div>
     </header>
 
     <section class="hero">
-      <div class="container">
+      <div class="hero-container">
         <div class="hero-content">
-          <h1>
+          <h1 class="hero-title">
             Easy way to find a <br />
             perfect property
           </h1>
-          <p>
+          <p class="hero-description">
             We provide a complete service for the sale, purchase or rental of
             real estate.
           </p>
 
-          <div class="tabs">
-            <button class="active">Rent</button>
-            <button>Buy</button>
-            <button>Sell</button>
-          </div>
-
-          <div class="search-box">
-            <div class="field">
-              <label>Location</label>
-              <input type="text" placeholder="Select Your City" />
+          <div>
+            <div class="tabs">
+              <button class="tab-btn">Rent</button>
+              <button class="tab-btn inactive">Buy</button>
+              <button class="tab-btn inactive">Sell</button>
             </div>
 
-            <div class="field">
-              <label>Property Type</label>
-              <select>
-                <option>Choose Property Type</option>
-              </select>
-            </div>
+            <div class="search-box">
+              <div class="field">
+                <label class="field-label">Location</label>
+                <div class="location-input-wrapper">
+                  <input
+                    type="text"
+                    placeholder="Select Your City"
+                    class="field-input"
+                  />
+                  <svg
+                    width="14"
+                    height="17"
+                    viewBox="0 0 14 17"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12.7 6.7C12.7 11.3667 6.70001 15.3667 6.70001 15.3667C6.70001 15.3667 0.700012 11.3667 0.700012 6.7C0.700012 5.1087 1.33215 3.58257 2.45737 2.45736C3.58259 1.33214 5.10871 0.699997 6.70001 0.699997C8.29131 0.699997 9.81743 1.33214 10.9427 2.45736C12.0679 3.58257 12.7 5.1087 12.7 6.7Z"
+                      stroke="#8F90A6"
+                      stroke-width="1.4"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M6.70001 8.7C7.80458 8.7 8.70001 7.80457 8.70001 6.7C8.70001 5.59543 7.80458 4.7 6.70001 4.7C5.59544 4.7 4.70001 5.59543 4.70001 6.7C4.70001 7.80457 5.59544 8.7 6.70001 8.7Z"
+                      stroke="#8F90A6"
+                      stroke-width="1.4"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+              </div>
 
-            <div class="field">
-              <label>Price Range</label>
-              <select>
-                <option>Choose Price Range</option>
-              </select>
-            </div>
+              <div class="divider"></div>
+              <div class="field self-center">
+                <label class="field-label">Property Type</label>
+                <select class="field-input">
+                  <option>Choose Property Type</option>
+                </select>
+              </div>
+              <div class="divider"></div>
+              <div class="field self-center">
+                <label class="field-label">Price Range</label>
+                <select class="field-input">
+                  <option>Choose Price Range</option>
+                </select>
+              </div>
 
-            <button class="search-btn">
-              <img src="./images/Group 1.png" alt="Search" />
-            </button>
+              <button class="search-btn">
+                <img src="./images/Group 1.png" alt="Search" />
+              </button>
+            </div>
           </div>
         </div>
 
@@ -79,21 +108,23 @@
     </section>
 
     <section class="cities">
-      <h1 class="title">We are available in many <br />well-known countries</h1>
+      <h1 class="cities-title">
+        We are available in many <br />well-known countries
+      </h1>
       <ul class="img-cities">
-        <li class="america country">
+        <li class="country">
           <img src="./images/Rectangle 9.png" alt="" />
           <span class="country-title">America</span>
         </li>
-        <li class="spain country">
+        <li class="country">
           <img src="./images/Rectangle 10.png" alt="" />
-          <span class="country-title">Spain </span>
+          <span class="country-title">Spain</span>
         </li>
-        <li class="london country">
+        <li class="country">
           <img src="./images/Rectangle 11.png" alt="" />
           <span class="country-title">London</span>
         </li>
-        <li class="france country">
+        <li class="country">
           <img src="./images/Rectangle 12.png" alt="" />
           <span class="country-title">France</span>
         </li>
@@ -102,7 +133,7 @@
 
     <section class="recent">
       <div class="recent-header">
-        <h2 class="header">Recently Added</h2>
+        <h2 class="recent-title">Recently Added</h2>
         <a href="#" class="see-all">See all</a>
       </div>
 
@@ -240,58 +271,52 @@
         <h1 class="left-title">Find your best Real Estate</h1>
         <p class="left-text">
           We provide a complete service for the sale, purchase or rental of real
-          estate.
+          estate. We have been operating in more than 15 countries and we have
+          been on the market for over 10 years.
         </p>
         <button class="left-btn">Contact Us</button>
       </div>
       <div class="right">
-        <img src="./images/house.png" alt="" />
+        <img src="./images/Image.png" alt="House Image" />
       </div>
     </section>
 
     <footer class="footer">
-      <div class="footer__grid">
-        <div class="footer__col">
-          <div class="logo">logipsum</div>
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo">Logo</div>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore.
+            We provide a complete service for the sale, purchase or rental of
+            real estate.
           </p>
           <div class="socials">
-            <a href="#">Fb</a>
-            <a href="#">Tw</a>
-            <a href="#">Ig</a>
-            <a href="#">In</a>
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">LinkedIn</a>
           </div>
-          <small>© 2021. All rights reserved.</small>
         </div>
 
-        <div class="footer__col">
-          <h4>Take a tour</h4>
-          <a href="#">Features</a>
-          <a href="#">Partners</a>
-          <a href="#">Pricing</a>
-          <a href="#">Product</a>
-          <a href="#">Support</a>
+        <div>
+          <h4>Property</h4>
+          <a href="#">Buy</a>
+          <a href="#">Sell</a>
+          <a href="#">Rent</a>
         </div>
 
-        <div class="footer__col">
-          <h4>Our Company</h4>
+        <div>
+          <h4>Company</h4>
           <a href="#">About Us</a>
-          <a href="#">Agents</a>
+          <a href="#">Contact</a>
           <a href="#">Blog</a>
-          <a href="#">Media</a>
-          <a href="#">Contact Us</a>
         </div>
 
-        <div class="footer__col">
+        <div>
           <h4>Subscribe</h4>
-          <p>Subscribe to get latest property, blog news from us</p>
-
-          <form class="subscribe">
-            <input type="email" placeholder="Email Address" />
-            <button type="submit">→</button>
-          </form>
+          <p>Subscribe to our newsletter for updates</p>
+          <div class="subscribe">
+            <input type="email" placeholder="Your email" />
+            <button>Subscribe</button>
+          </div>
         </div>
       </div>
     </footer>
